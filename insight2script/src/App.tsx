@@ -31,7 +31,7 @@ function App() {
     setTrendData(null);
 
     try {
-      const response = await fetch('http://127.0.0.1:5000/api/generate', {
+      const response = await fetch('https://insight2script-1.onrender.com/api/generate', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ prompt: prompt.trim() }),
